@@ -8,11 +8,18 @@
 <body>
   <div class="container">
     <h1>AeroReach</h1>
-    <p>Select how you want to use the platform</p>
+    <p class="subtitle">Select how you want to use the platform</p>
 
     <div class="role-buttons">
-      <button onclick="selectRole('user')">I am a User</button>
-      <button onclick="selectRole('responder')">I am a Responder</button>
+      <button class="primary" onclick="selectRole('user')">
+        I am a User
+        <span class="btn-caption">Request medical support</span>
+      </button>
+
+      <button class="secondary" onclick="selectRole('responder')">
+        I am a Responder
+        <span class="btn-caption">Healthcare provider / clinic / organization</span>
+      </button>
     </div>
   </div>
 
